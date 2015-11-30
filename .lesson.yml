@@ -1,0 +1,18 @@
+---
+title: "Dark Nebula"
+type: "challenge"
+description: "A Test-Based Framework for JavaScript Fundamentals"
+visibility: "assign"
+tags: "javascript, tdd"
+ignore:
+- "data/"
+- "lib/"
+- "node_modules/"
+- "tests/"
+- ".jshintrc"
+- "CHANGELOG.md"
+- "nebula-part-2.md"
+- "Gruntfile.js"
+- "help.txt"
+- "index.js"
+- "package.json"
