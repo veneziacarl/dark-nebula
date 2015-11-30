@@ -2,14 +2,30 @@ exports = (typeof window === 'undefined') ? global : window;
 
 exports.functionsAnswers = {
   isPrime : function(num) {
-
+    for (var i = 2; i < num; i++) {
+      if (num % 2 === 0) {
+        return false;
+      }
+    }
+    return num > 1;
   },
 
   arraySum : function(array) {
-
+    return array.reduce( function(previous, current) { return previous + current; } );
   },
 
   fizzBuzz : function(num) {
+    if ( isNaN(num) ) {
+      return false;
+    } else if ( num % 3 === 0 && num % 5 === 0 ) {
+      return 'fizzbuzz';
+    } else if ( num % 5 === 0 ) {
+      return 'buzz';
+    } else if ( num % 3 === 0 ) {
+      return 'fizz';
+    } else {
+      return num;
+    };
     // write a function that receives a number as its argument;
     // if the number is divisible by 3, the function should return 'fizz';
     // if the number is divisible by 5, the function should return 'buzz';
