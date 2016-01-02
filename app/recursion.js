@@ -34,15 +34,27 @@ exports.recursionAnswers = {
   },
 
   permute: function(arr) {
-    // Optional Challenge
+    var nextPerm = [];
+    var permutations = [];
+    var permutationFunction = function (array){
+      for (var i = 0; i < array.length; i++){
+        var x = array[i];
+        nextPerm.push(x);
+        if (x === array[array.length - 1]){
+          permutationFunction(12)
+        }
+      }
+    }
+
+    permutationFunction(arr);
+    return permutations;
+
   },
 
   fibonacci: function(n) {
-    // Optional Challenge
   },
 
   validParentheses: function(n) {
-    // Optional Challenge
   }
 };
 
